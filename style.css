@@ -213,6 +213,8 @@ li {
   display: grid;
   align-items: end;
   cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 
@@ -328,6 +330,62 @@ a {
              TRANSITION
 ######################################## */
 
+@keyframes circletap {
+  0% {
+    transform: translateY(-50%)scaleY(1.7);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 5;
+  }
+}
+
+@keyframes moveR {
+  0% {
+    transform: translatex(-10%)scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 4;
+  }
+  100% {
+    /* transform: translatex(50%)scale(6); */
+    opacity: 1;
+  }
+}
+
+.nav {
+  animation: circletap 0.5s linear;
+}
+
+
+.front-display p,
+.night-arcade,
+.grid,
+.pocket,
+.fisheye {
+  animation: moveR 0.5s linear;
+}
+
+.deep-earth,
+.soccer,
+.above,
+.curiosity {
+  animation: moveR 0.8s linear;
+}
+
+.interactive {
+  animation: circletap 0.9s linear;
+}
 
 
 @media (max-width: 834px) {
@@ -375,10 +433,48 @@ a {
 
   /* Hold on */
 
+  
+
+  @keyframes circletap {
+    0% {
+      transform: translatex(-100%)scale(1);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(-100%)scale(6);
+      opacity: 1;
+    }
+  }
+
+  .dropdown-content.show {
+    animation: circletap 0.5s linear;
+  }
+
+  @keyframes circletap {
+    0% {
+      transform: translateY(-10%)scaleY(1.7);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 2;
+    }
+  }
+  
 
 
-
-  /* Hold on */
+  /* Okay... Move on */
 
   ul {
     display: grid;

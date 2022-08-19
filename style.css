@@ -42,8 +42,11 @@ body {
   background-size:  cover;
   padding: 4vw 12vw;
   margin-bottom: 5rem;
-  
-  
+}
+
+.front-display h1 {
+  visibility: hidden;
+  display: none;
 }
 
 .front-display {

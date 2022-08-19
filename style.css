@@ -388,6 +388,8 @@ a {
 
   .item {
     margin-bottom: 2rem;
+    margin-left: 0;
+    margin-top: 2rem;
   }
 
   .toggle {
@@ -406,7 +408,7 @@ a {
     background-image: url("images/mobile/image-hero.jpg");
     width: 100vw;
     margin-bottom: 0;
-    padding-top: 10vw;
+    padding-top: 7vw;
   }
 
   .front-display p{
@@ -448,14 +450,15 @@ a {
 
   .creation-header {
     margin-top: 2rem;
-    display: block;
+    display: grid;
     text-align: center;
+    justify-items: center;
+
 
   }
 
   .btn {
     width: 7rem;
-    margin-left: 50%;
     position: absolute;
     margin-top: 2rem;
     top: 100%;

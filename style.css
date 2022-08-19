@@ -1,0 +1,552 @@
+/* #######################################
+        UNIVERSAL DECLEARATION
+######################################## */
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s all;
+}
+
+:root {
+  --font-family400: 'Alata', sans-serif;
+  --font-family300: 'Josefin Sans', sans-serif;
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+}
+
+
+
+/* #######################################
+             FRONT PAGE
+######################################## */
+
+.front-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size:  cover;
+  padding: 4vw 12vw;
+  margin-bottom: 5rem;
+  
+  
+}
+
+.front-display {
+  font-family: var(--font-family300);
+  color: var(--White);
+  text-transform: uppercase;
+  height: 100%;
+  align-items: center;
+  display: grid;
+  
+}
+
+.front-display p{
+  font-size: 5vw;
+  border: 0.3rem solid white;
+  width: 35rem;
+  padding: 1vw;
+}
+
+
+
+/* #######################################
+             NAV BAR
+######################################## */
+
+.nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-family: var(--font-family400);
+  color: var(--White);
+}
+
+.logo {
+  width: 20%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+  
+}
+
+.item:after {    
+  background: none repeat scroll 0 0 transparent;
+  
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.item:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+li {
+  position: relative;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+
+/* #######################################
+             SECONG VIEW
+######################################## */
+
+.second-page {
+  background-image: url("images/desktop/image-interactive.jpg");
+  background-repeat: no-repeat;
+  display: grid;
+  justify-items: end;
+  margin: 0 9rem;
+}
+
+.interactive {
+  background-color: var(--White);
+  font-family: var(--font-family300);
+  width: 50%;
+  margin-top: auto;
+  height: 50%;
+  padding: 3rem;
+}
+
+.interactive h1 {
+  margin-bottom: 1rem;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.interactive p {
+  font-size: 1.5vw;
+}
+
+
+/* #######################################
+             CREATIONS
+######################################## */
+
+.creations {
+  position: relative;
+  margin: 5rem 9rem 0 9rem;
+  font-family: var(--font-family300);
+}
+
+.creation-header {
+  margin-top: 10rem;
+  display: flex;
+  font-family: var(--font-family300);
+}
+
+.creation-header h1 {
+  font-size: 3vw;
+}
+
+.btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid var(--Dark-Gray);
+  width: 12vw;
+  cursor: pointer;
+  font-family: var(--font-family400);
+}
+
+.btn:hover {
+  background-color: var(--Black);
+  color: var(--White);
+  border: none;
+}
+
+
+.creation-items {
+  display: grid;
+  margin: 5rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr ;
+  column-gap: 1.6rem;
+  row-gap: 1.8rem;
+}
+
+.creations p {
+  z-index: 10;
+}
+
+.deep-earth,
+.night-arcade,
+.soccer,
+.grid,
+.above,
+.pocket,
+.curiosity,
+.fisheye {
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  padding-left: 2.3rem;
+  padding-bottom: 2.3rem;
+  font-size: 2rem;
+  color: var(--White);
+  display: grid;
+  align-items: end;
+  cursor: pointer;
+}
+
+
+.deep-earth:hover,
+.night-arcade:hover,
+.soccer:hover,
+.grid:hover,
+.above:hover,
+.pocket:hover,
+.curiosity:hover,
+.fisheye:hover {
+  opacity: 0.7;
+}
+
+.deep-earth {
+  background-image: url("images/desktop/image-deep-earth.jpg");
+
+}
+
+.night-arcade {
+  background-image: url("images/desktop/image-night-arcade.jpg");
+}
+
+.soccer {
+  background-image: url("images/desktop/image-soccer-team.jpg");
+}
+
+.grid {
+  background-image: url("images/desktop/image-grid.jpg");
+}
+
+.above {
+  background-image: url("images/desktop/image-from-above.jpg");
+}
+
+.pocket {
+  background-image: url("images/desktop/image-pocket-borealis.jpg");
+}
+
+.curiosity {
+  background-image: url("images/desktop/image-curiosity.jpg");
+}
+
+.fisheye {
+  background-image: url("images/desktop/image-fisheye.jpg");
+}
+
+  /* #######################################
+             FOOTER
+######################################## */
+
+
+.footer {
+  width: 100%;
+  padding: 3rem 9rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--White);
+  font-family: var(--font-family400);
+  background-color: var(--Black);
+}
+
+.logo-footer {
+  background-image: url("images/logo.svg");
+  height: 1.3rem;
+  background-repeat: no-repeat;
+  background-size:  contain;
+}
+
+.list {
+  display: flex;
+}
+
+.list p {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.right {
+  display: grid;
+  color: var(--Dark-Gray);
+  float: right;
+  margin-left: auto;
+}
+
+.icons {
+  color: var(--White);
+  font-size: 2rem;
+  word-spacing: 1vw;
+}
+
+.item {
+  position: relative;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.toggle {
+  font-size: 1.5rem;
+  display: none;
+  margin-left: auto;
+}
+
+
+
+/* #######################################
+             TRANSITION
+######################################## */
+
+
+
+@media (max-width: 834px) {
+  /* .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--Black);
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    padding: 2.5rem;
+
+  } */
+
+  .logo {
+    position: absolute;
+    z-index: 10;
+  }
+
+
+  .toggle {
+    transition: 5s all ease-in-out;
+  }
+
+  .dropdown-content {
+    display: none;
+    grid-template-columns: 1fr;
+    background-color: var(--Black);
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    margin-top: 0;
+    padding: 4rem;
+    transition: 0.4s all ease-in-out;
+    
+  }
+
+  .dropdown-content.show{
+    display: block;
+    transition: 0.5s all ease-in-out;
+  }
+
+  /* Hold on */
+
+
+
+
+  /* Hold on */
+
+  ul {
+    display: grid;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .item {
+    margin-bottom: 2rem;
+  }
+
+  .toggle {
+    display: flex;
+    z-index: 10;
+    -webkit-transition: all 0.5s;
+   transition: all 0.5s;
+  }
+
+
+  /* #######################################
+             FRONT PAGE
+######################################## */
+  .front-page {
+    background-image: url("images/mobile/image-hero.jpg");
+    width: 100vw;
+    margin-bottom: 0;
+  }
+
+  .front-display p{
+    width: 100%;
+    font-size: 11vw;
+  }
+
+
+  /* #######################################
+             SECONG VIEW
+######################################## */
+  .second-page{
+    background-image: url("images/mobile/image-interactive.jpg");
+    background-size: 100vw 50vw;
+    margin: 5vw;
+    height: 100vh;
+  }
+
+  .interactive {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .interactive h1 {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .interactive p {
+    font-size: 3.5vw;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+
+  /* #######################################
+             CREATIONS
+######################################## */
+
+  .creation-header {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+
+  }
+
+  .btn {
+    width: 7rem;
+    margin-left: 45%;
+    position: absolute;
+    margin-top: 2rem;
+    top: 100%;
+  }
+
+  .creations {
+    margin: 5vw;
+  }
+
+  .creation-header h1 {
+    font-size: 8vw;
+  }
+
+  .creation-items {
+    grid-template-columns: 1fr
+  }
+
+  .creation-items p {
+    width: 12rem;
+  }
+
+
+  .deep-earth,
+  .night-arcade,
+  .soccer,
+  .grid,
+  .above,
+  .pocket,
+  .curiosity,
+  .fisheye {
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    word-wrap: break-word;
+    
+  }
+
+  .deep-earth {
+    background-image: url("images/mobile/image-deep-earth.jpg");
+  
+  }
+  
+  .night-arcade {
+    background-image: url("images/mobile/image-night-arcade.jpg");
+  }
+  
+  .soccer {
+    background-image: url("images/mobile/image-soccer-team.jpg");
+  }
+  
+  .grid {
+    background-image: url("images/mobile/image-grid.jpg");
+  }
+  
+  .above {
+    background-image: url("images/mobile/image-from-above.jpg");
+  }
+  
+  .pocket {
+    background-image: url("images/mobile/image-pocket-borealis.jpg");
+  }
+  
+  .curiosity {
+    background-image: url("images/mobile/image-curiosity.jpg");
+  }
+  
+  .fisheye {
+    background-image: url("images/mobile/image-fisheye.jpg");
+  }
+
+  /* #######################################
+             FOOTER
+######################################## */
+
+  .footer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    padding: 2rem;
+  }
+  .list {
+    display: grid;
+  }
+
+  .right {
+    margin: 0;
+  }
+
+
+  
+
+  
+  
+
+}

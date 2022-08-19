@@ -107,8 +107,8 @@ ul {
 
 li {
   position: relative;
-  margin-right: 2rem;
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 
@@ -398,6 +398,7 @@ a {
   }
 
 
+
   /* #######################################
              FRONT PAGE
 ######################################## */
@@ -405,6 +406,7 @@ a {
     background-image: url("images/mobile/image-hero.jpg");
     width: 100vw;
     margin-bottom: 0;
+    padding-top: 10vw;
   }
 
   .front-display p{
@@ -453,7 +455,7 @@ a {
 
   .btn {
     width: 7rem;
-    margin-left: 45%;
+    margin-left: 50%;
     position: absolute;
     margin-top: 2rem;
     top: 100%;
